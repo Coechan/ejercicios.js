@@ -449,22 +449,25 @@ const arrayNum = [1,2,3,4,5,6];
 //  }
 	
 // 	- Iterar por todos los elementos dentro de un array utilizando .forEach y mostrarlos en pantalla.
-arrayNum.forEach(function mostrar(num){
-    console.log(num)
-})
+
+// arrayNum.forEach(function mostrar(num){
+//     console.log(num)
+// })
 	
 // 	- Mostrar todos los elementos dentro de un array sumándole uno a cada uno.
-arrayNum.forEach(function sumaUno (num){
- console.log(num +  1)
-})
+
+// arrayNum.forEach(function sumaUno (num){
+//  console.log(num +  1)
+// })
 	
 // 	- Generar una copia de un array pero con todos los elementos incrementado en 1.
-const newArray = [];
-arrayNum.map(function sumaUno (num){
- newArray.push(num+1)
-    } )
 
-    console.log(newArray)
+// const newArray = [];
+// arrayNum.map(function sumaUno (num){
+//  newArray.push(num+1)
+//     } )
+
+//     console.log(newArray)
 
 // 	- Calcular el promedio
 let totalArray = 0;
@@ -479,11 +482,44 @@ promArray(arrayNum)
 
 // - Crear un array vacío, luego generar 20 números al azar y guardarlos en un array.
 
+// const arrayVacio = [];
+// for (let i8 = 0 ; i8 < 20 ; i8++){
+//     let numRandom = Math.round(Math.random()*20);
+//     arrayVacio.push(numRandom);
+// }
+
+// console.log(arrayVacio)
+
+
 // - Crear un array vacío, luego generar N números al azar y guardarlos en un array, N es introducido por el usuario a través de un prompt.
 
+// let numero = prompt("ingresar un numero")
+// const arrayVacio2 = [];
+// for (let i9 = 0 ; i9 < numero ; i9++){
+//     let numRandom = Math.round(Math.random()*numero);
+//     arrayVacio2.push(numRandom);
+// }
+
+// console.log(arrayVacio2)
+
 // - Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "café", "rosa"] determinar si un color introducido por el usuario a través de un prompt se encuentra dentro del array o no.
+
+// let colores = prompt ("Introducir un color");
+// const arrayColores = ["azul", "amarillo", "rojo", "verde", "café", "rosa"];
+
+// arrayColores.forEach(function igual(color){
+//     if (color == colores){
+//         console.log("Se encuentra dentro del array")
+//     } else {
+//         console.log("No se encuentra dentro del array")
+//     }
+// })
+
+
 // String y arrays
 // El usuario ingrese un string con varias palabras separadas por coma en un popup y se deben convertir en un array, (el usuario ingresa: "1,2,3,4,5" y se convierte en [1,2,3,4,5])
+
+
 
 // Convertir un array ingresado dentro del código en un string (existe un método en javascript para hacerlo)
 
