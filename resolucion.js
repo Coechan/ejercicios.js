@@ -470,15 +470,16 @@ const arrayNum = [1,2,3,4,5,6];
 //     console.log(newArray)
 
 // 	- Calcular el promedio
-let totalArray = 0;
-const promArray = (randomArray) =>{
-    for(let i7 = 0 ; i7 < randomArray.length ; i7++){
-        totalArray = totalArray + randomArray[i7];
-    }
-    return totalArray / randomArray.length
-}
+//ESTE NO FUNCIONA TODAVIA
+// let totalArray = 0;
+// const promArray = (randomArray) =>{
+//     for(let i7 = 0 ; i7 < randomArray.length ; i7++){
+//         totalArray = totalArray + randomArray[i7];
+//     }
+//     return totalArray / randomArray.length
+// }
 
-promArray(arrayNum)
+// promArray(arrayNum)
 
 // - Crear un array vacío, luego generar 20 números al azar y guardarlos en un array.
 
@@ -519,11 +520,16 @@ promArray(arrayNum)
 // String y arrays
 // El usuario ingrese un string con varias palabras separadas por coma en un popup y se deben convertir en un array, (el usuario ingresa: "1,2,3,4,5" y se convierte en [1,2,3,4,5])
 
-
+// let palabras = prompt("Escribir una lista de 3 a 5 palabras, separadas con una coma");
+// const arrayPalabras = palabras.split(",")
+// console.log(arrayPalabras)
 
 // Convertir un array ingresado dentro del código en un string (existe un método en javascript para hacerlo)
 
+
+
 // Unión, intersección y conteo
+
 // Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la intersección de ambos elementos. (Ejemplo: [1,2,3] unión [1,2,4] = [1,2]
 
 // Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la unión de ambos elementos, (Ejemplo: [1,2,3] unión [1,2,4] = [1,1,2,2,3,4]
