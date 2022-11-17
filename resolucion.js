@@ -526,15 +526,33 @@ const arrayNum = [1,2,3,4,5,6];
 
 // Convertir un array ingresado dentro del código en un string (existe un método en javascript para hacerlo)
 
+// const anArray = ["holis ", "como va? " , "voy ", "a " , "tratar ", "de ", "convertirme " , "en " , "un " , "array"];
+// console.log(anArray);
+// const aString = anArray.toString();
+// console.log(aString)
+
 
 
 // Unión, intersección y conteo
 
 // Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la intersección de ambos elementos. (Ejemplo: [1,2,3] unión [1,2,4] = [1,2]
+// const arrayUno = ["sushi" , "bao" , "ramen" , "dango" , "takoyaki"];
+// const arrayDos = ["dango" , "bao" , "ramen"];
+
+
+// const arrayInterseccion = arrayUno.filter(value => arrayDos.includes(value));
+// console.log(arrayInterseccion)
 
 // Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la unión de ambos elementos, (Ejemplo: [1,2,3] unión [1,2,4] = [1,1,2,2,3,4]
 
+// const arrayUno = ["sushi" , "bao" , "ramen" , "dango" , "takoyaki"];
+// const arrayDos = ["dango" , "bao" , "ramen"];
+
+// const arrayUnion = arrayUno.concat(arrayDos);
+// console.log(arrayUnion);
+
 // El usuario ingresa dos conjuntos de números separados por coma, el programa debe determinar si ambos conjuntos tienen la misma cantidad de números.
+
 
 // El usuario ingresa dos conjuntos de números separados por coma, si ambos conjuntos tienen la misma cantidad de elementos mostrar un arreglo que contenga la suma de cada elemento. (Ejemplo: [1,2,3] + [2,3,4] = [3,5,7])
 
