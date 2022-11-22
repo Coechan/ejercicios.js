@@ -2,14 +2,14 @@
 
 // // 1) Escribir un programa que muestre un prompt donde el usuario ingresa un número, luego muestra otro prompt pidiendo otro número, finalmente el programa muestra una alerta con el resultado de la suma.
 
-// const number1 = parseInt(prompt("Ingresar un numero"));
-// const number2 = parseInt(prompt("Ingresar otro numero"));
+const number1 = parseInt(prompt("Ingresar un numero"));
+const number2 = parseInt(prompt("Ingresar otro numero"));
 
-// const plus = (num1,num2) => {
-//     let result = num1 + num2;
-//     alert(`el resultado de la suma es ${result}`);
-// }
-// plus(number1,number2);
+const plus = (num1,num2) => {
+    let result = num1 + num2;
+    alert(`el resultado de la suma es ${result}`);
+}
+plus(number1,number2);
 
 
 // // 2) Crear un programa donde el usuario ingrese en un prompt la temperatura en Celcius y el programa muestre en una alerta la temperatura en Fahrenheit.
@@ -553,13 +553,70 @@ const arrayNum = [1,2,3,4,5,6];
 
 // El usuario ingresa dos conjuntos de números separados por coma, el programa debe determinar si ambos conjuntos tienen la misma cantidad de números.
 
+// let conjuntoUno = prompt("Ingresar numeros, separados por coma");
+// let conjuntoDos = prompt("Ingresar otros numeros, tambien separados por coma");
+// let arrayConjuntoUno = [];
+// let arrayConjuntoDos = [];
+// arrayConjuntoUno = conjuntoUno.split(",");
+// arrayConjuntoDos = conjuntoDos.split(",")
+// if(arrayConjuntoUno.length == arrayConjuntoDos.length){
+//     console.log('tienen la misma cantidad de numeros')
+// } else {
+//     console.log('No tienen la misma cantidad de numeros')
+// }
+// console.log(arrayConjuntoUno.length);
+// console.log(arrayConjuntoDos.length)
 
-// El usuario ingresa dos conjuntos de números separados por coma, si ambos conjuntos tienen la misma cantidad de elementos mostrar un arreglo que contenga la suma de cada elemento. (Ejemplo: [1,2,3] + [2,3,4] = [3,5,7])
+
+// El usuario ingresa dos conjuntos de números separados por coma, si ambos conjuntos tienen la misma cantidad de elementos mostrar un arreglo que contenga la suma de cada elemento. (Ejemplo: [1,2,3] + [2,3,4] = [3,5,7]);
+
+// let conjuntoUno = prompt("Ingresar numeros, separados por coma");
+// let conjuntoDos = prompt("Ingresar otros numeros, tambien separados por coma");
+// let arrayConjuntoUno = conjuntoUno.split(",");
+// let arrayConjuntoDos = conjuntoDos.split(",")
+// arrayConjuntoUno = arrayConjuntoUno.map((item) =>{
+//     return parseInt(item)
+// })
+// arrayConjuntoDos = arrayConjuntoDos.map((item) =>{
+//     return parseInt(item)
+// })
+
+// let arrayTres = []
+
+
+// if(arrayConjuntoUno.length == arrayConjuntoDos.length){
+//     arrayTres = arrayConjuntoUno.map((item, index) => {
+//         return  item + arrayConjuntoDos[index]
+//       })
+// } else {
+//     console.log('No tienen la misma cantidad de numeros')
+// }
+
+// console.log(arrayConjuntoUno)
+// console.log(arrayConjuntoDos);
+// console.log(arrayTres)
+
+
+
 
 // Filtrando datos en arreglo
 // Crear una función que reciba un arreglo con números y devuelva un nuevo arreglo con solo los números pares, hint: utilizar reduce()
 
+// let arrayNumeros = [45,22,4,103,50,100,12];
+// let arrayEven = arrayNumeros.filter((item) => {
+//     return (item % 2 == 0)
+//     }
+// )
+// console.log(arrayEven)
+
 // Crear una función que reciba un arreglo con palabras, crear un nuevo arreglo que contenga solo las palabras que empiezan con una vocal.
+
+// let arrayWords = ['casa' , 'perro' , 'auto' , 'libro', 'araña' , 'ubicacion'];
+// let arrayVowel = arrayWords.filter((item) =>{
+//     return /[aeiou]/.test(item[0]);
+// })
+// console.log(arrayVowel)
+
 
 // Ordenamiento
 // Crear un método que permite intercambiar las posiciones de dos elementos de un arreglo en base a sus índices ej:
@@ -567,26 +624,74 @@ const arrayNum = [1,2,3,4,5,6];
 //  arr = [1,2,3]
 //  swap(arr, 0, 1)
 //  console.log(arr) // [2,1,3]
+
+
+// const swap= (array, index1, index2) => {
+//     [array[index1], array[index2]] = [array[index2], array[index1]];
+// };
+//  arr = [1,2,3]
+//  swap(arr, 0, 1)
+//  console.log(arr) 
+
+
 // Realizar el mismo ejercicio anterior pero que en esta ocasión devuelva un arreglo nuevo con los datos cambiados.
 
 //  arr = [1,2,3]
 //  new_arr = swap(arr, 0, 1)
 //  console.log(arr) // [1,2,3]
 //  console.log(new_arr) // [2,1,3]
+
+// const swap= (array, index1, index2) => {
+//    return  [array[index1], array[index2]] = [array[index2], array[index1]];
+// };
+//  arr = [1,2,3]
+//  swap(arr, 0, 1);
+//  newArr = arr
+//  console.log(newArr) 
+
+
 // Crear una función que reciba un arreglo y que cree uno nuevo con todos los elementos ordenados de menor a mayor, (sin ocupar el método .sort)
 
+const numbers = [3,5,6,2];
+let newNumbers = numbers;
+
+
+
+
 // Crear una función que reciba un arreglo y que cree uno nuevo con todos los elementos ordenados de mayor a menor.
+
+// const number = [1,4,6,2];
+// number.sort((a, b) => b-a)
+
+
+
+// let largeToSmall = number.sort();
+// largeToSmall.reverse()
+// console.log(largeToSmall);
+
 
 // Arreglos de arreglos
 // Crear una función que permite aplanar un arreglo dado, Ejemplo:
 
+// //  var arr = [[1,2,3],[4,5,6],[7,8,9]];
+// //  console.log(aplanar(arr)); // [1,2,3,4,5,6,7,8,9];
+
 //  var arr = [[1,2,3],[4,5,6],[7,8,9]];
-//  console.log(aplanar(arr)); // [1,2,3,4,5,6,7,8,9]
+//  console.log(arr.flat());
+
+
+
 // Crear una función que divida un arreglo en dos partes con la misma cantidad de elementos (o una diferencia de máximo un elemento) y devuelva un arreglo que contenga al grupo1 y al grupo2
 
 //  var arr = [1,2,3,4,5,6,7,8];
 //  console.log(split(arr)); // [[1,2,3,4], [5,6,7,8]]
+ var arr = [1,2,3,4,5,6,7,8];
+ console.log(arr.split([])); // [[1,2,3,4], [5,6,7,8]]
+
+
 // Matrices
+
+
 // Recorrer un arreglo de arreglos para mostrarlo como una matriz, ejemplo [[1,1],[2,2]] se mostraría de la siguiente forma:
 // 1	1
 // 2	2
@@ -612,7 +717,10 @@ const arrayNum = [1,2,3,4,5,6];
 // 1	4	7
 // 2	5	8
 // 3	6	9
+
+
 // Funciones y arreglos
+
 // Crear una función que reciba un arreglo como parámetro y devuelva una copia del arreglo.
 
 // Crear una función que devuelva el promedio de un arreglo, en caso de que el arreglo esté vacío debe devolver cero.
